@@ -1,12 +1,31 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const session = require('express-session');
 const cors = require('cors');
 const compression = require('compression');
 const morgan = require('morgan');
+const config = require('config');
 const log = require('./utils/logger');
+
+const passportHelper = require('./web_api/modules/auth/passport');
+const authenticationMiddleware = require('./web_api/modules/auth/authorisationMiddleware');
+
+const passport = passportHelper.initPassport();
+
+const routes = require('./web_api/index');
+
 
 // Main application
 const app = express();
+app.use(session({
+  secret: config.sessionSecret,
+  resave: false,
+  saveUninitialized: false
+}))
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Enable compression
 app.use(compression());
@@ -19,60 +38,36 @@ app.use(bodyParser.urlencoded({ extended: false }));
 log.setLogLevel('debug');
 app.use(morgan(':method :url :status :response-time ms - :res[content-length]', { stream: log }));
 
-const jobsStore = {
-  job1: {
-    id: 1,
-    jobName: 'test jobName',
-    params: {},
-    jobExecutionId: 'job1',
-    status: 'queued'
-  }
-};
-
-/**
- * random time from 1 sec to 10 min
- */
-function getRandomTime(min = 1000, max = 1200) {
-  return Math.floor(Math.random() * ((max - min) + 1)) + min;
-}
-
-/**
- * changing running to finished or failed
- */
-function runningToFinished(jobExecutionId) {
-  const interval = getRandomTime();
-
-  setTimeout(() => {
-    if (!jobsStore[jobExecutionId]) return;
-    jobsStore[jobExecutionId].status = (Math.round(Math.random()) ? 'failed' : 'finished');
-  }, interval);
-}
-
-/**
- * changing queued status to running
- */
-function queuedToRunning(jobExecutionId) {
-  const interval = getRandomTime();
-  setTimeout(() => {
-    if (!jobsStore[jobExecutionId]) return;
-    jobsStore[jobExecutionId].status = 'running';
-    runningToFinished(jobExecutionId);
-  }, interval);
-}
+app.use(`/api/`, routes);
 
 
-app.get('/test', (req, res, next) => {
-  const jobExecutionId = req.params.id;
-  const job = jobsStore[jobExecutionId];
+app.post('/login', passportHelper.authenticate, (req, res) => {
+  res.send({}) ;
+});
 
-  if (!job) {
-    const err = new Error(`Job: ${jobExecutionId} not found`);
-    err.status = 400;
-    return next(err);
-  }
+app.post('/logout', authenticationMiddleware(), (req, res) => {
+  req.logOut();
+  res.send({});
+});
 
+// function authenticationMiddleware () {
+//   return function (req, res, next) {
+//     console.log('Middleware');
+//     if (req.isAuthenticated()) {
+//       return next()
+//     }
+//     console.log('Error');
+//     // res.redirect('/')
+//     const err = new Error('Authorisation error');
+//     err.status = 505;
+//     return next(err);
+//   }
+// }
+
+app.get('/test', authenticationMiddleware(), (req, res, next) => {
+  console.log('Direct!');
   return res.status(200)
-    .json({ data: { status: job.status }, error: null });
+    .json({ result: "Ok" });
 });
 
 

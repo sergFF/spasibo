@@ -1,10 +1,11 @@
 {
   "port": 3300,
+  "sessionSecret": "123",
   "db": {
     "user": "spasibo",
     "password": "password123",
     "host": "localhost",
     "database": "spasibo",
-    "port": 32768
+    "port": 32769
   }
 }
