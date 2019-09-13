@@ -1,5 +1,5 @@
 module.exports = (sequelize, DataTypes) => {
-  const country = sequelize.define('country', {
+  const user = sequelize.define('site_user', {
     id: {
       allowNull: false,
       autoIncrement: true,
@@ -34,7 +34,10 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: true
     }
   }, {
-    timestamps: true
+    timestamps: true,
   });
-  return country;
+  user.prototype.verifyPassword = function (password) {
+    return password === this.password;
+    }
+  return user;
 };

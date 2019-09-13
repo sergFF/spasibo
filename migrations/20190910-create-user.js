@@ -34,6 +34,12 @@ module.exports = {
       },
       passwordChange: {
         type: Sequelize.BOOLEAN
+      },
+      createdAt: {
+        type: Sequelize.DATEONLY
+      },
+      updatedAt: {
+        type: Sequelize.DATEONLY
       }
     }),
   down: queryInterface => queryInterface.dropTable('site_user')

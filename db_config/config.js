@@ -8,7 +8,7 @@ const db_config = {
   define: { freezeTableName: 'true' },
   seederStorage: 'sequelize',
   port: config.db.port,
-  // logging: config.db.platform.logging,
+  logging: console.log,
   pool: { acquire: 20000 }
 };
 

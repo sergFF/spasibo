@@ -1,12 +1,11 @@
 const passport = require('passport');
-const LocalStrategy = require('passport-local');
+const LocalStrategy = require('passport-local')
+const { User } = require('../../../db_api/');
 
 function initPassport() {
-  function findUser(user) {
-    return { username: 'user-1' }
-  };
 
   passport.serializeUser(function(user, done) {
+    user.password = null;
     done(null, user);
   });
 
@@ -15,19 +14,19 @@ function initPassport() {
   });
 
   passport.use(new LocalStrategy(
-    function(username, password, done) {
-      console.log('CASE');
-      const user = findUser(username);
-      // if (err) {
-      //   return done(err);
-      // }
-      if (!user) {
-        return done(null, false);
+    async function(username, password, done) {
+      try {
+        const user = await User.getUserByLogin(username);
+        if (!user) {
+          return done(null, false);
+        }
+        if (!user.verifyPassword(password)) {
+          return done(null, false);
+        }
+        return done(null, user.get({ plain: true }));
+      } catch (e) {
+        return done(e);
       }
-      // if (user.verifyPassword(password)) {
-      //   return done(null, false);
-      // }
-      return done(null, user);
     }));
 
 return passport;

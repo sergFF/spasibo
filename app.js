@@ -40,32 +40,9 @@ app.use(morgan(':method :url :status :response-time ms - :res[content-length]', 
 
 app.use(`/api/`, routes);
 
-
-app.post('/login', passportHelper.authenticate, (req, res) => {
-  res.send({}) ;
-});
-
-app.post('/logout', authenticationMiddleware(), (req, res) => {
-  req.logOut();
-  res.send({});
-});
-
-// function authenticationMiddleware () {
-//   return function (req, res, next) {
-//     console.log('Middleware');
-//     if (req.isAuthenticated()) {
-//       return next()
-//     }
-//     console.log('Error');
-//     // res.redirect('/')
-//     const err = new Error('Authorisation error');
-//     err.status = 505;
-//     return next(err);
-//   }
-// }
-
 app.get('/test', authenticationMiddleware(), (req, res, next) => {
   console.log('Direct!');
+  console.log(req.user);
   return res.status(200)
     .json({ result: "Ok" });
 });
