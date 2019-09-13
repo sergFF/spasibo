@@ -1,6 +1,6 @@
 {
   "port": 3300,
-  "salt": "",
+  "saltRounds": 1,
   "sessionSecret": "123",
   "db": {
     "user": "spasibo",
