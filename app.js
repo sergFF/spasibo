@@ -16,7 +16,7 @@ const passport = passportHelper.initPassport();
 
 const routes = require('./web_api/index');
 
-const isDevMode = process.env.NODE_ENV === 'develop';
+const isDevMode = process.env.NODE_ENV === 'development';
 
 // Main application
 const app = express();
