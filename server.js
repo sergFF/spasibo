@@ -8,5 +8,5 @@ const server = http.createServer(app);
 
 log.info(`NODE_ENV is ${process.env.NODE_ENV}`);
 
-server.listen(conf.port);
-log.warn(`Server is now running at http://localhost:${conf.port}.`);
+server.listen(process.env.PORT || conf.port);
+log.warn(`Server is now running at http://localhost:${process.env.PORT || conf.port}.`);
