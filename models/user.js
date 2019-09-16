@@ -34,7 +34,7 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: true
     }
   }, {
-    timestamps: true,
+    timestamps: true
   });
   user.prototype.verifyPassword = function (password) {
     return password === this.password;

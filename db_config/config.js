@@ -1,5 +1,5 @@
 const config = require('config');
-console.log(process.env.NODE_ENV);
+const log = require('../utils/logger');
 const development = {
   username: config.db.user,
   password: config.db.password,
@@ -14,7 +14,8 @@ const development = {
 };
 
 const production = {
-  use_env_variable: "DATABASE_URL"
+  use_env_variable: "DATABASE_URL",
+  logging: log.info
 };
 
 module.exports = {
