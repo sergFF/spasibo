@@ -14,12 +14,7 @@ const development = {
 };
 
 const production = {
-  host: config.db.host,
-  dialect: 'postgres',
-  define: { freezeTableName: 'true' },
-  seederStorage: 'sequelize',
-  logging: console.log,
-  pool: { acquire: 20000 }
+  "use_env_variable": "DATABASE_URL"
 };
 
 module.exports = {
