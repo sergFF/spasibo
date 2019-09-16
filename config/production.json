@@ -6,5 +6,3 @@
     "host": "postgres://lmgutxlmwplmhj:ac538fee8b33520791c0b7dfe832e8ad3f5bbfa2f7c50fd77de48ebee2ce5aaa@ec2-54-228-207-163.eu-west-1.compute.amazonaws.com:5432/dbkpp2eltdfuj1"
   }
 }
-
-// postgres://lmgutxlmwplmhj:ac538fee8b33520791c0b7dfe832e8ad3f5bbfa2f7c50fd77de48ebee2ce5aaa@ec2-54-228-207-163.eu-west-1.compute.amazonaws.com:5432/dbkpp2eltdfuj1
