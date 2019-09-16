@@ -1,5 +1,6 @@
 const config = require('config');
-const db_config = {
+console.log(config);
+const development = {
   username: config.db.user,
   password: config.db.password,
   host: config.db.host,
@@ -12,7 +13,16 @@ const db_config = {
   pool: { acquire: 20000 }
 };
 
+const production = {
+  host: config.db.host,
+  dialect: 'postgres',
+  define: { freezeTableName: 'true' },
+  seederStorage: 'sequelize',
+  logging: console.log,
+  pool: { acquire: 20000 }
+};
+
 module.exports = {
-  development: db_config,
-  production: db_config
+  development,
+  production
 };

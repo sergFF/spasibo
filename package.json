@@ -6,11 +6,13 @@
   "scripts": {
     "test": "test",
     "server:dev": "NODE_ENV=develop nodemon server.js",
-    "server": "NODE_ENV=production nodemon server.js",
+    "server": "NODE_ENV=develop nodemon server.js",
+    "init": "NODE_ENV=production",
     "sequelize": "npx ./node_modules/sequelize-cli/lib/sequelize",
     "db:migrate": "npx ./node_modules/sequelize-cli/lib/sequelize db:migrate --config ./db_config/config.js",
     "db:rollback": "npx ./node_modules/sequelize-cli/lib/sequelize db:migrate:undo:all --config ./db_config/config.js",
-    "db:seed": "npx ./node_modules/sequelize-cli/lib/sequelize db:seed:all --config ./db_config/config.js"
+    "db:seed": "npx ./node_modules/sequelize-cli/lib/sequelize db:seed:all --config ./db_config/config.js",
+    "start": "NODE_ENV=production npm run db:migrate && npm run server"
   },
   "author": "",
   "license": "ISC",
