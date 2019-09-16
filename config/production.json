@@ -3,10 +3,6 @@
   "saltRounds": 1,
   "sessionSecret": "123",
   "db": {
-    "user": "",
-    "password": "",
-    "host": "",
-    "database": "",
-    "port": ""
+    "use_env_variable": "DATABASE_URL"
   }
 }
