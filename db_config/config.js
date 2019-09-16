@@ -15,6 +15,7 @@ const development = {
 
 const production = {
   use_env_variable: "DATABASE_URL",
+  define: { freezeTableName: 'true' },
   logging: log.info
 };
 
