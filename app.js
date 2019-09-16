@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const path = require('path');
 const cors = require('cors');
 const compression = require('compression');
 const morgan = require('morgan');
@@ -15,9 +16,13 @@ const passport = passportHelper.initPassport();
 
 const routes = require('./web_api/index');
 
+const isDevMode = process.env.NODE_ENV === 'develop';
 
 // Main application
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'front-end/build')));
+
 app.use(session({
   secret: config.sessionSecret,
   resave: false,
@@ -26,6 +31,12 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+// enable cors for *
+if (isDevMode) {
+  app.use(cors({ methods: 'GET, POST, PUT, DELETE' }));
+}
+
 
 // Enable compression
 app.use(compression());
@@ -40,6 +51,7 @@ app.use(morgan(':method :url :status :response-time ms - :res[content-length]', 
 
 app.use(`/api/`, routes);
 
+
 app.get('/test', authenticationMiddleware(), (req, res, next) => {
   console.log('Direct!');
   console.log(req.user);
@@ -47,6 +59,11 @@ app.get('/test', authenticationMiddleware(), (req, res, next) => {
     .json({ result: "Ok" });
 });
 
+if (!isDevMode) {
+  app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, './front-end/build', 'index.html'));
+  });
+}
 
 // not found route
 app.use((req, res, next) => {
