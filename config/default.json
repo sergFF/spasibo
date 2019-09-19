@@ -7,6 +7,6 @@
     "password": "password123",
     "host": "localhost",
     "database": "spasibo",
-    "port": 32769
+    "port": 32768
   }
 }

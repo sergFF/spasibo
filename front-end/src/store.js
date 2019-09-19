@@ -18,8 +18,6 @@ const store = createStore(
   )
 );
 
-// const history = syncHistoryWithStore(browserHistory, store);
-
 if (module.hot) {
   // Enable Webpack hot module replacement for reducers
   module.hot.accept('./reducers', () => {

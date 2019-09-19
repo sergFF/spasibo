@@ -1,5 +1,5 @@
 {
-  "port": 3300,
+  "port": 80,
   "saltRounds": 1,
   "sessionSecret": "123",
   "db": {
