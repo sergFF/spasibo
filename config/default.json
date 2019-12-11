@@ -2,11 +2,12 @@
   "port": 3300,
   "sessionSecret": "123",
   "saltRounds": 1,
+  "currency_list": ["UAH", "USD", "EURO", "RUR"],
   "db": {
-    "user": "spasibo",
+    "user": "postgres",
     "password": "password123",
     "host": "localhost",
     "database": "spasibo",
-    "port": 32768
+    "port": 54320
   }
 }

@@ -21,6 +21,25 @@ const isDevMode = process.env.NODE_ENV === 'development';
 // Main application
 const app = express();
 
+// var whitelist = [
+//   'http://127.0.0.1:3000',
+// ];
+// var corsOptions = {
+//   origin: function(origin, callback){
+//     var originIsWhitelisted = whitelist.indexOf(origin) !== -1;
+//     callback(null, originIsWhitelisted);
+//   },
+//   credentials: true
+// };
+// app.use(cors(corsOptions));
+
+
+if (isDevMode) {
+  app.use(cors({ methods: 'GET, POST, PUT, DELETE, OPTIONS', origin: 'http://localhost:3000', credentials: true}));
+}
+
+
+
 app.use(express.static(path.join(__dirname, 'front-end/build')));
 
 app.use(session({
@@ -32,17 +51,10 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// enable cors for *
-if (isDevMode) {
-  app.use(cors({ methods: 'GET, POST, PUT, DELETE' }));
-}
-
-
 // Enable compression
 app.use(compression());
 
-// enable cors for *
-app.use(cors({ methods: 'GET, POST, PUT, DELETE' }));
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -52,7 +64,7 @@ app.use(morgan(':method :url :status :response-time ms - :res[content-length]', 
 app.use(`/api/`, routes);
 
 
-app.get('/test', authenticationMiddleware(), (req, res, next) => {
+app.post('/test', authenticationMiddleware(), (req, res, next) => {
   console.log('Direct!');
   console.log(req.user);
   return res.status(200)

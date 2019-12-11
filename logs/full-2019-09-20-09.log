@@ -1,0 +1,3 @@
+2019-09-20T06:56:49.130Z  info: Setting log level to ( debug )
+2019-09-20T06:56:49.133Z  info: NODE_ENV is development
+2019-09-20T06:56:49.135Z  warn: Server is now running at http://localhost:3300.

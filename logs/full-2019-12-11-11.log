@@ -1,0 +1,13 @@
+2019-12-11T09:00:05.401Z  info: Setting log level to ( debug )
+2019-12-11T09:00:05.403Z  info: NODE_ENV is development
+2019-12-11T09:00:05.406Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T09:00:54.285Z  info: Setting log level to ( debug )
+2019-12-11T09:00:54.288Z  info: NODE_ENV is development
+2019-12-11T09:00:54.290Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T09:06:21.539Z  info: Setting log level to ( debug )
+2019-12-11T09:06:21.541Z  info: NODE_ENV is development
+2019-12-11T09:06:21.544Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T09:06:42.802Z  info: POST /api/login 200 68.303 ms - 125
+
+2019-12-11T09:08:08.730Z  info: GET /api/user/current_user?req_timestamp=1576055288641 200 28.891 ms - 125
+

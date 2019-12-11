@@ -1,3 +1,4 @@
+const ROLES = require('../constants/roles');
 module.exports = (sequelize, DataTypes) => {
   const user = sequelize.define('site_user', {
     id: {
@@ -22,8 +23,8 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false
     },
     role: {
-      type: DataTypes.ENUM('ADMIN', 'USER'),
-      defaultValue: 'USER'
+      type: DataTypes.ENUM(ROLES.ADMIN, ROLES.USER),
+      defaultValue: ROLES.USER
     },
     isActive: {
       type: DataTypes.BOOLEAN,

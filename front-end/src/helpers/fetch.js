@@ -21,7 +21,7 @@ export function fetchApiNative(url, method, parameters, options) {
   const params = parameters ? Object.assign({}, parameters) : {};
 
   params.req_timestamp = new Date()
-      .getTime();
+    .getTime();
 
   if (fetchParams.method === 'GET') {
     fetchUrl = Object.keys(params)
@@ -42,11 +42,11 @@ export function fetchApiNative(url, method, parameters, options) {
     fetchParams.body = JSON.stringify(params);
     fetchParams.headers = {
       Accept: 'application/json',
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     };
   }
-
-  fetchParams.credentials = 'same-origin';
+  fetchParams.credentials = 'include';
+  // fetchParams.credentials = 'same-origin';
   return fetch(fetchUrl, fetchParams)
     .then(response => {
       const resContentType = response.headers.get('Content-Type');
@@ -124,7 +124,6 @@ export function fetchApi(url, action, method = 'GET', params, options) {
 
   return (dispatch, getState) => {
     dispatch({ ...reactAction, type: `REQUEST_${reactAction.type}` });
-    const state = getState();
 
     return fetchApiNative(url, method, params, options)
       .then(
@@ -142,8 +141,9 @@ export function fetchApi(url, action, method = 'GET', params, options) {
             // dispatch(notFoundError(error.message || 'Not Found Error'));
           } else if (error.status === 403) {
             // dispatch(forbiddenError(error.message || 'Forbidden Error'));
-          } else if (error.status === 503) {
+          } else if (error.status === 505) {
             // dispatch(ODAError(error.message || 'ODA API Server Error'));
+            console.log(error);
           } else if (error.status === 302) {
             // dispatch(sessionExpired());
           } else if (error.status === 400) {

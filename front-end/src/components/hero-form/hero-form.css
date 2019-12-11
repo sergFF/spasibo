@@ -1,0 +1,7 @@
+.hero-form {
+  margin: 20px;
+}
+
+.hero-form .hero-field {
+  min-width: 300px;
+}

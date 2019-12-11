@@ -1,6 +1,7 @@
 function authenticationMiddleware () {
   return function (req, res, next) {
     console.log('Middleware');
+    console.log(req.isAuthenticated())
     if (req.isAuthenticated()) {
       return next()
     }

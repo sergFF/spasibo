@@ -1,0 +1,61 @@
+2019-12-05T14:01:15.762Z  info: GET /api/login?req_timestamp=1575554475712 200 0.888 ms - 166
+
+2019-12-05T14:01:59.259Z  info: GET /api/login?req_timestamp=1575554519207 200 0.380 ms - 166
+
+2019-12-05T14:02:06.640Z  info: GET /api/login?req_timestamp=1575554526596 200 0.328 ms - 166
+
+2019-12-05T14:03:04.351Z  info: GET /api/login?req_timestamp=1575554584296 200 0.417 ms - 166
+
+2019-12-05T14:04:23.921Z  info: GET /api/login?req_timestamp=1575554663852 200 0.321 ms - 166
+
+2019-12-05T14:17:51.784Z  info: Setting log level to ( debug )
+2019-12-05T14:17:51.786Z  info: NODE_ENV is development
+2019-12-05T14:17:51.788Z  warn: Server is now running at http://localhost:3300.
+2019-12-05T14:20:31.753Z  info: GET /api/login?req_timestamp=1575555631583 505 13.812 ms - -
+
+2019-12-05T14:20:49.645Z  info: POST /api/login 401 70.273 ms - -
+
+2019-12-05T14:20:53.975Z  info: POST /api/login 200 7.983 ms - 109
+
+2019-12-05T14:22:38.657Z  info: GET /api/login?req_timestamp=1575555758538 200 0.599 ms - 166
+
+2019-12-05T14:22:54.096Z  info: GET /api/login?req_timestamp=1575555774001 200 0.700 ms - 166
+
+2019-12-05T14:24:02.630Z  info: GET /api/login?req_timestamp=1575555842536 200 0.394 ms - 166
+
+2019-12-05T14:24:06.449Z  info: GET /api/login?req_timestamp=1575555846373 200 0.243 ms - 166
+
+2019-12-05T14:24:23.798Z  info: GET /api/login?req_timestamp=1575555863692 200 0.323 ms - 166
+
+2019-12-05T14:26:03.748Z  info: GET /api/login?req_timestamp=1575555963663 200 0.682 ms - 166
+
+2019-12-05T14:26:18.331Z  info: GET /api/login?req_timestamp=1575555978239 200 0.457 ms - 166
+
+2019-12-05T14:26:34.887Z  info: GET /api/login?req_timestamp=1575555994797 200 0.442 ms - 166
+
+2019-12-05T14:26:56.260Z  info: GET /api/login?req_timestamp=1575556016168 200 0.368 ms - 166
+
+2019-12-05T14:27:31.708Z  info: GET /api/login?req_timestamp=1575556051606 200 0.445 ms - 166
+
+2019-12-05T14:27:47.456Z  info: GET /api/login?req_timestamp=1575556067356 200 0.529 ms - 166
+
+2019-12-05T14:28:04.815Z  info: GET /api/login?req_timestamp=1575556084693 200 0.499 ms - 166
+
+2019-12-05T14:28:24.582Z  info: GET /api/login?req_timestamp=1575556104469 200 0.514 ms - 166
+
+2019-12-05T14:28:58.845Z  info: GET /api/login?req_timestamp=1575556138728 200 0.424 ms - 166
+
+2019-12-05T14:30:08.954Z  info: GET /api/login?req_timestamp=1575556208846 200 0.562 ms - 166
+
+2019-12-05T14:30:28.031Z  info: GET /api/login?req_timestamp=1575556227919 200 5.927 ms - 166
+
+2019-12-05T14:31:34.012Z  info: GET /api/login?req_timestamp=1575556293899 200 1.683 ms - 166
+
+2019-12-05T14:34:13.373Z  info: GET /api/login?req_timestamp=1575556453282 200 1.539 ms - 166
+
+2019-12-05T14:34:19.495Z  info: GET /api/login?req_timestamp=1575556459436 200 0.330 ms - 166
+
+2019-12-05T14:34:38.118Z  info: GET /api/login?req_timestamp=1575556478018 200 0.386 ms - 166
+
+2019-12-05T14:34:54.458Z  info: GET /api/login?req_timestamp=1575556494351 200 0.346 ms - 166
+

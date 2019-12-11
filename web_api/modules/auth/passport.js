@@ -10,6 +10,7 @@ function initPassport() {
   });
 
   passport.deserializeUser(function(user, done) {
+    console.log(user);
     done(null, user);
   });
 

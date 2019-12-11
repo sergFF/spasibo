@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { withRouter } from 'react-router-dom';
 import getUser from '../../actions/login-action'
+import { BrowserRouter as Router, Route, Switch, Redirect, NavLink } from 'react-router-dom';
 
 import '../../assets/pure-css/forms.css';
 import '../../assets/pure-css/grids.css';
 
 function LoginForm({ history }) {
-  const user = useSelector(state => state.user);
+  const { userData, status} = useSelector(state => state.userReducer);
   const dispatch = useDispatch();
   const [login, setLogin] = useState({ login: null });
   const [password, setPassword] = useState({ password: null });
@@ -18,19 +19,21 @@ function LoginForm({ history }) {
         alert("Authorization error");
         return;
       }
-      history.push('/')
     });
+  }
+  if (userData && status === 'DONE' ) {
+     return (<Redirect to='/admin' />)
   }
   return (
       <div className='pure-g'>
-        <div className='pure-u-1-3' />
+        <div className='pure-u-1-2' />
         <div className='pure-u-1-8'>
           <div className="pure-form">
           <form className="pure-form pure-form-stacked">
             <fieldset>
-              <legend>A Stacked Form</legend>
-              <label htmlFor="email">Email</label>
-              <input id="email" type="email" placeholder="Email" onChange={e => setLogin(e.target.value)} />
+              <legend>Authorisation form</legend>
+              <label htmlFor="login">Login</label>
+              <input id="login" type="text" placeholder="login" onChange={e => setLogin(e.target.value)} />
               <span className="pure-form-message">This is a required field.</span>
               <label htmlFor="password">Password</label>
               <input id="password" type="password" placeholder="Password" onChange={e => setPassword(e.target.value)} />

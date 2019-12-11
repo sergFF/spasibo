@@ -1,0 +1,166 @@
+2019-12-11T08:15:58.293Z  info: GET /api/user/current_user?req_timestamp=1576052158200 505 11.721 ms - -
+
+2019-12-11T08:16:05.541Z  info: POST /api/login 401 73.958 ms - -
+
+2019-12-11T08:16:09.160Z  info: POST /api/login 200 6.462 ms - 125
+
+2019-12-11T08:16:27.533Z  info: GET /api/user/current_user?req_timestamp=1576052187456 200 28.048 ms - 175
+
+2019-12-11T08:17:32.218Z  info: GET /api/user/current_user?req_timestamp=1576052252132 200 32.176 ms - 175
+
+2019-12-11T08:18:06.691Z  info: GET /api/user/current_user?req_timestamp=1576052286617 200 26.020 ms - 175
+
+2019-12-11T08:18:14.710Z  info: PUT /api/user/3 200 11.533 ms - 190
+
+2019-12-11T08:28:08.878Z  info: GET /api/user/current_user?req_timestamp=1576052888769 200 45.917 ms - 175
+
+2019-12-11T08:28:09.829Z  info: GET /api/user/current_user?req_timestamp=1576052889765 200 10.958 ms - 175
+
+2019-12-11T08:28:11.556Z  info: GET /api/user/current_user?req_timestamp=1576052891495 200 10.511 ms - 175
+
+2019-12-11T08:28:19.326Z  info: PUT /api/user/3 200 7.294 ms - 190
+
+2019-12-11T08:28:46.643Z  info: GET /api/user/current_user?req_timestamp=1576052926570 200 24.038 ms - 175
+
+2019-12-11T08:28:49.926Z  info: PUT /api/user/3 200 8.353 ms - 190
+
+2019-12-11T08:29:04.660Z  info: POST /api/login 200 17.148 ms - 125
+
+2019-12-11T08:30:26.857Z  info: GET /api/user/current_user?req_timestamp=1576053026785 200 22.075 ms - 175
+
+2019-12-11T08:30:46.846Z  info: PUT /api/user/3 200 22.020 ms - 190
+
+2019-12-11T08:31:16.315Z  info: GET /api/user/current_user?req_timestamp=1576053076241 200 25.299 ms - 175
+
+2019-12-11T08:31:22.313Z  info: PUT /api/user/3 200 6.192 ms - 190
+
+2019-12-11T08:32:39.673Z  info: GET /api/user/current_user?req_timestamp=1576053159600 200 27.065 ms - 175
+
+2019-12-11T08:32:42.684Z  info: PUT /api/user/3 200 7.478 ms - 190
+
+2019-12-11T08:34:41.321Z  info: Setting log level to ( debug )
+2019-12-11T08:34:41.323Z  info: NODE_ENV is development
+2019-12-11T08:34:41.326Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:37:07.414Z  info: GET /api/user/current_user?req_timestamp=1576053427326 505 7.754 ms - -
+
+2019-12-11T08:37:15.728Z  info: POST /api/login 200 66.414 ms - 125
+
+2019-12-11T08:37:22.370Z  info: PUT /api/user/3 200 12.009 ms - 190
+
+2019-12-11T08:37:27.870Z  info: PUT /api/user/3 200 11.112 ms - 190
+
+2019-12-11T08:37:30.440Z  info: PUT /api/user/3 200 8.368 ms - 190
+
+2019-12-11T08:41:18.119Z  info: GET /api/user/current_user?req_timestamp=1576053678041 200 25.908 ms - 125
+
+2019-12-11T08:44:38.897Z  info: Setting log level to ( debug )
+2019-12-11T08:44:38.899Z  info: NODE_ENV is development
+2019-12-11T08:44:38.902Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:44:43.243Z  info: PUT /api/user/3 505 4.843 ms - -
+
+2019-12-11T08:44:47.450Z  info: POST /api/login 200 63.286 ms - 125
+
+2019-12-11T08:45:08.522Z  info: PUT /api/user/3 200 26.151 ms - 190
+
+2019-12-11T08:45:22.903Z  info: Setting log level to ( debug )
+2019-12-11T08:45:22.906Z  info: NODE_ENV is development
+2019-12-11T08:45:22.909Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:45:26.145Z  info: PUT /api/user/3 505 3.987 ms - -
+
+2019-12-11T08:45:31.184Z  info: POST /api/login 200 60.149 ms - 125
+
+2019-12-11T08:45:35.276Z  info: PUT /api/user/3 200 13.521 ms - 190
+
+2019-12-11T08:45:42.766Z  info: Setting log level to ( debug )
+2019-12-11T08:45:42.768Z  info: NODE_ENV is development
+2019-12-11T08:45:42.771Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:45:50.843Z  info: PUT /api/user/3 505 3.855 ms - -
+
+2019-12-11T08:45:55.680Z  info: POST /api/login 200 63.018 ms - 125
+
+2019-12-11T08:45:57.925Z  info: PUT /api/user/3 200 13.235 ms - 190
+
+2019-12-11T08:47:24.203Z  info: Setting log level to ( debug )
+2019-12-11T08:47:24.205Z  info: NODE_ENV is development
+2019-12-11T08:47:24.208Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:47:32.952Z  info: PUT /api/user/3 505 4.605 ms - -
+
+2019-12-11T08:47:37.216Z  info: POST /api/login 200 66.656 ms - 125
+
+2019-12-11T08:47:40.457Z  info: PUT /api/user/3 200 14.719 ms - 190
+
+2019-12-11T08:49:02.433Z  info: Setting log level to ( debug )
+2019-12-11T08:49:02.435Z  info: NODE_ENV is development
+2019-12-11T08:49:02.438Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:49:25.403Z  info: Setting log level to ( debug )
+2019-12-11T08:49:25.405Z  info: NODE_ENV is development
+2019-12-11T08:49:25.408Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:49:34.847Z  info: GET /api/user/current_user?req_timestamp=1576054174753 505 8.060 ms - -
+
+2019-12-11T08:49:38.357Z  info: POST /api/login 200 64.916 ms - 125
+
+2019-12-11T08:49:41.889Z  info: PUT /api/user/3 200 13.544 ms - 190
+
+2019-12-11T08:50:16.404Z  info: Setting log level to ( debug )
+2019-12-11T08:50:16.406Z  info: NODE_ENV is development
+2019-12-11T08:50:16.409Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:50:25.871Z  info: GET /api/user/current_user?req_timestamp=1576054225791 505 7.980 ms - -
+
+2019-12-11T08:50:30.401Z  info: POST /api/login 200 64.159 ms - 125
+
+2019-12-11T08:50:35.515Z  info: PUT /api/user/3 500 0.982 ms - -
+
+2019-12-11T08:50:51.805Z  info: Setting log level to ( debug )
+2019-12-11T08:50:51.808Z  info: NODE_ENV is development
+2019-12-11T08:50:51.811Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:50:54.892Z  info: POST /api/login 200 61.225 ms - 125
+
+2019-12-11T08:50:57.501Z  info: PUT /api/user/3 500 2.156 ms - -
+
+2019-12-11T08:51:10.774Z  info: Setting log level to ( debug )
+2019-12-11T08:51:10.776Z  info: NODE_ENV is development
+2019-12-11T08:51:10.779Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:51:17.236Z  info: POST /api/login 200 62.119 ms - 125
+
+2019-12-11T08:51:20.005Z  info: PUT /api/user/3 500 1.869 ms - -
+
+2019-12-11T08:51:52.246Z  info: Setting log level to ( debug )
+2019-12-11T08:51:52.248Z  info: NODE_ENV is development
+2019-12-11T08:51:52.251Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:51:56.225Z  info: POST /api/login 200 61.630 ms - 125
+
+2019-12-11T08:51:59.990Z  info: PUT /api/user/3 200 11.515 ms - 190
+
+2019-12-11T08:52:08.210Z  info: Setting log level to ( debug )
+2019-12-11T08:52:08.212Z  info: NODE_ENV is development
+2019-12-11T08:52:08.215Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:52:11.352Z  info: GET /api/user/current_user?req_timestamp=1576054331274 505 6.496 ms - -
+
+2019-12-11T08:52:15.696Z  info: POST /api/login 200 58.786 ms - 125
+
+2019-12-11T08:52:19.240Z  info: PUT /api/user/3 505 0.745 ms - -
+
+2019-12-11T08:52:25.419Z  info: Setting log level to ( debug )
+2019-12-11T08:52:25.421Z  info: NODE_ENV is development
+2019-12-11T08:52:25.424Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:54:10.492Z  info: Setting log level to ( debug )
+2019-12-11T08:54:10.494Z  info: NODE_ENV is development
+2019-12-11T08:54:10.497Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:54:17.410Z  info: POST /api/login 200 63.494 ms - 125
+
+2019-12-11T08:54:20.145Z  info: PUT /api/user/3 200 13.156 ms - 190
+
+2019-12-11T08:54:25.710Z  info: Setting log level to ( debug )
+2019-12-11T08:54:25.713Z  info: NODE_ENV is development
+2019-12-11T08:54:25.715Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:54:28.351Z  info: PUT /api/user/3 505 5.617 ms - -
+
+2019-12-11T08:56:50.530Z  info: Setting log level to ( debug )
+2019-12-11T08:56:50.532Z  info: NODE_ENV is development
+2019-12-11T08:56:50.538Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:57:56.909Z  info: Setting log level to ( debug )
+2019-12-11T08:57:56.912Z  info: NODE_ENV is development
+2019-12-11T08:57:56.917Z  warn: Server is now running at http://localhost:3300.
+2019-12-11T08:59:03.800Z  info: Setting log level to ( debug )
+2019-12-11T08:59:03.802Z  info: NODE_ENV is development
+2019-12-11T08:59:03.805Z  warn: Server is now running at http://localhost:3300.

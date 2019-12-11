@@ -1,6 +1,18 @@
 import { GET_USER_ACTION } from '../constants/action_types';
 
-const initialState = null;
+const initialState = {
+  userData: {
+    id: null,
+    fullName: '',
+    email: '',
+    password: '',
+    login:'',
+    role: null,
+    isActive: false,
+    passwordChange: null
+  },
+  status: 'PRISTINE'
+};
 
 /**
  * Auth reducer
@@ -9,12 +21,20 @@ export default function (state = initialState, action) {
   switch (action.type) {
     case `REQUEST_${GET_USER_ACTION}`: {
       return {
-        ...initialState
+        ...state,
+        status: 'LOADING'
       };
     }
     case `SUCCESS_${GET_USER_ACTION}`: {
       return {
-        ...action.payload
+        userData: action.payload,
+        status: 'DONE'
+      };
+    }
+    case `ERROR_${GET_USER_ACTION}`: {
+      return {
+        ...state,
+        status: 'ERROR'
       };
     }
     default:

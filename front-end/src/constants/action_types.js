@@ -1,1 +1,2 @@
 export const GET_USER_ACTION = "GET_USER_ACTION";
+export const ADD_HERO_ACTION = "ADD_HERO_ACTION";
