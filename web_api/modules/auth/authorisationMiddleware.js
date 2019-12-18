@@ -1,11 +1,9 @@
 function authenticationMiddleware () {
   return function (req, res, next) {
-    console.log('Middleware');
-    console.log(req.isAuthenticated())
     if (req.isAuthenticated()) {
-      return next()
+      return next();
     }
-    console.log('Error');
+    console.log('Auth middleware Error');
     // res.redirect('/')
     const err = new Error('Authorisation error');
     err.status = 505;

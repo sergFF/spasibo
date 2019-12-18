@@ -1,4 +1,4 @@
-import { GET_USER_ACTION } from '../constants/action_types';
+import { GET_CURRENT_USER_ACTION } from '../constants/action_types';
 
 const initialState = {
   userData: {
@@ -19,19 +19,20 @@ const initialState = {
  */
 export default function (state = initialState, action) {
   switch (action.type) {
-    case `REQUEST_${GET_USER_ACTION}`: {
+    case `REQUEST_${GET_CURRENT_USER_ACTION}`: {
       return {
         ...state,
         status: 'LOADING'
       };
     }
-    case `SUCCESS_${GET_USER_ACTION}`: {
+    case `SUCCESS_${GET_CURRENT_USER_ACTION}`: {
+      const status = action.payload.passwordChange ? 'CHANGE_PASSWORD' : 'DONE';
       return {
         userData: action.payload,
-        status: 'DONE'
+        status
       };
     }
-    case `ERROR_${GET_USER_ACTION}`: {
+    case `ERROR_${GET_CURRENT_USER_ACTION}`: {
       return {
         ...state,
         status: 'ERROR'

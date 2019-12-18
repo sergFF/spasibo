@@ -6,11 +6,12 @@ import ReportPage from "../report-page/report-page";
 import ReportForm from "../report-form/report-form";
 import HeroForm from "../hero-form/hero-form";
 import AdminContainer from './admin-container';
-import Provider from "react-redux/es/components/Provider";
 import Navigation from './navigation-menu';
-import ProfilePage from '../profile_page/profile-page'
+import EditProfilePageWrapper from '../profile_page/edit-profile-wrapper'
+import CreateProfilePageWrapper from '../profile_page/create-profile-wrapper'
 import {useDispatch, useSelector} from 'react-redux';
-import { refreshUser } from '../../actions/login-action';
+import { refreshUser } from '../../actions/users-actions';
+import UsersList from '../users-container';
 
 
 
@@ -25,6 +26,10 @@ const AdminRouter = ({children}) => {
   if (status === 'ERROR') {
     return  <Redirect to="/client-app/login" />
   }
+
+  if (status === 'CHANGE_PASSWORD') {
+    return  <Redirect to="/changepassword" />
+  }
   return (
     <AdminContainer>
         <Navigation userName={userData.fullName} userRole={userData.role}/>
@@ -32,7 +37,10 @@ const AdminRouter = ({children}) => {
         <Route exac path="/reports" component={ReportPage} />
         <Route exac path="/report-form" component={ReportForm} />
         <Route exac path="/admin/hero-form" component={HeroForm} />
-        <Route exac path="/admin/profile/view" render={() => <ProfilePage userEntity={userData} />} />
+        <Route exac path="/admin/profile/edit" render={() => <EditProfilePageWrapper userEntity={userData} />} />
+        <Route exac path="/admin/profile/create" component={CreateProfilePageWrapper} />
+        {userData.role === 'ADMIN'
+        && <Route exac path="/admin/users" render={() => <UsersList userEntity={userData} />} />}
       </Switch>
     </AdminContainer>
   );

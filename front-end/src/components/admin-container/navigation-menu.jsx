@@ -33,8 +33,8 @@ function ApplicationBar({ userName, userRole, history }) {
           <Typography variant="h6" className={classes.title}>
             {userName && userName.length > 0 ? userName : 'Невідомій Користувач'}
           </Typography>
-          <Button color="inherit" onClick={() => history.push('/admin/profile/view')}>Редагувати профіль</Button>
-          <Button color="inherit" onClick={() => history.push('/admin/users')}>Керування користувачами</Button>
+          <Button color="inherit" onClick={() => history.push('/admin/profile/edit')}>Редагувати профіль</Button>
+          {userRole === 'ADMIN' && <Button color="inherit" onClick={() => history.push('/admin/users')}>Керування користувачами</Button>}
           <Button color="inherit" onClick={() => history.push('/admin/reports')}>Reports</Button>
           <Button color="inherit" onClick={() => history.push('/admin/add-report')}>Add report</Button>
           <Button color="inherit" onClick={() => history.push('/admin/hero-form')}>Add hero</Button>

@@ -24,6 +24,9 @@ function LoginForm({ history }) {
   if (userData && status === 'DONE' ) {
      return (<Redirect to='/admin' />)
   }
+  if (userData && status === 'CHANGE_PASSWORD' ) {
+    return (<Redirect to='/changepassword' />)
+  }
   return (
       <div className='pure-g'>
         <div className='pure-u-1-2' />

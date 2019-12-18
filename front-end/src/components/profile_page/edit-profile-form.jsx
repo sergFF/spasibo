@@ -81,9 +81,9 @@ const FormTemplate = ({
           error={touched.password && Boolean(errors.password)}
           helperText = {errors.password}
           onChange={handleChange}
-          // value={values.paswi}
-          inputProps={{
-            onBlur: handleBlur
+          value = {values.password}
+          inputProps = {{
+            // onBlur: handleBlur
           }}
         />
       </Grid>
@@ -97,9 +97,9 @@ const FormTemplate = ({
           error={touched.password_2 && Boolean(errors.password_2)}
           helperText = {touched.password_2 ? errors.password_2 : null}
           onChange={handleChange}
+          value={values.password_2}
           inputProps={{
-            onBlur: handleBlur,
-            // value: values.user_name
+            onBlur: handleBlur
           }}
         />
       </Grid>

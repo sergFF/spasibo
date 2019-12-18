@@ -10,7 +10,6 @@ function initPassport() {
   });
 
   passport.deserializeUser(function(user, done) {
-    console.log(user);
     done(null, user);
   });
 
@@ -18,13 +17,11 @@ function initPassport() {
     async function(username, password, done) {
       try {
         const user = await User.getUserByLogin(username);
-        if (!user) {
-          return done(null, false);
+        if (user && user.verifyPassword(password) && user.isActive) {
+          return done(null, user.get({ plain: true }));
         }
-        if (!user.verifyPassword(password)) {
-          return done(null, false);
-        }
-        return done(null, user.get({ plain: true }));
+        console.log('Authorisation error');
+        return done(null, false);
       } catch (e) {
         return done(e);
       }
