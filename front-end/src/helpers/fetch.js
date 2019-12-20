@@ -1,15 +1,6 @@
 import 'whatwg-fetch';
 // import 'abortcontroller-polyfill/dist/polyfill-patch-fetch';
 import isObject from 'lodash.isobject';
-// import requireAuthAction, { SignOut } from '../actions/auth';
-// import {
-//   internalServerError,
-//   notFoundError,
-//   ODAError,
-//   forbiddenError,
-//   sessionExpired,
-//   badRequestError
-// } from '../actions/errors';
 
 /**
  * Fetch API wrapper

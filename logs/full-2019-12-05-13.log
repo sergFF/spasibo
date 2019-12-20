@@ -1,5 +1,0 @@
-2019-12-05T11:53:32.020Z  info: Setting log level to ( debug )
-2019-12-05T11:53:32.022Z  info: NODE_ENV is development
-2019-12-05T11:53:32.024Z  warn: Server is now running at http://localhost:3300.
-2019-12-05T11:53:47.502Z  info: POST /api/login 200 88.231 ms - 109
-

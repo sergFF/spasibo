@@ -17,7 +17,7 @@ function initPassport() {
     async function(username, password, done) {
       try {
         const user = await User.getUserByLogin(username);
-        if (user && user.verifyPassword(password) && user.isActive) {
+        if (user && await user.verifyPassword(password) === true && user.isActive) {
           return done(null, user.get({ plain: true }));
         }
         console.log('Authorisation error');

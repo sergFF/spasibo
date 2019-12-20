@@ -1,4 +1,4 @@
-import { GET_CURRENT_USER_ACTION } from '../constants/action_types';
+import { GET_CURRENT_USER_ACTION, LOGOUT_CURRENT_USER } from '../constants/action_types';
 
 const initialState = {
   userData: {
@@ -37,6 +37,9 @@ export default function (state = initialState, action) {
         ...state,
         status: 'ERROR'
       };
+    }
+    case `SUCCESS_${LOGOUT_CURRENT_USER}`: {
+      return initialState;
     }
     default:
       return state;

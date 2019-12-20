@@ -6,7 +6,7 @@ function authenticationMiddleware () {
     console.log('Auth middleware Error');
     // res.redirect('/')
     const err = new Error('Authorisation error');
-    err.status = 505;
+    err.status = 401;
     return next(err);
   }
 }

@@ -6,36 +6,6 @@
     "auditLog": "logs/.de8814db5d3037581b7b10935ecbdb546d50f113-audit.json",
     "files": [
         {
-            "date": 1575535510489,
-            "name": "logs/error-2019-12-05-10.log",
-            "hash": "f934bf46fd8561e0a69739034887bb0d"
-        },
-        {
-            "date": 1575536993139,
-            "name": "logs/error-2019-12-05-11.log",
-            "hash": "03fca39ba1ce8da8fa16bd0f59e47868"
-        },
-        {
-            "date": 1575546811682,
-            "name": "logs/error-2019-12-05-13.log",
-            "hash": "edcf9684e15edd0aa0186f0f228adc55"
-        },
-        {
-            "date": 1575548335575,
-            "name": "logs/error-2019-12-05-14.log",
-            "hash": "c1656868ad792a4eb3bea7f551b2b150"
-        },
-        {
-            "date": 1575552896767,
-            "name": "logs/error-2019-12-05-15.log",
-            "hash": "4fd41a31fce0bdc37765ae9004cf4085"
-        },
-        {
-            "date": 1575555471439,
-            "name": "logs/error-2019-12-05-16.log",
-            "hash": "7319db84b3643a5f91be6aee7f279207"
-        },
-        {
             "date": 1575639365245,
             "name": "logs/error-2019-12-06-15.log",
             "hash": "2eec102f6d253ace75922eaff8001207"
@@ -154,6 +124,41 @@
             "date": 1576681382460,
             "name": "logs/error-2019-12-18-17.log",
             "hash": "c25ea4b63f5a61d814f7482bf0583eaf"
+        },
+        {
+            "date": 1576741179522,
+            "name": "logs/error-2019-12-19-09.log",
+            "hash": "2263c40926551d4ee7798cf6a4d60eae"
+        },
+        {
+            "date": 1576742526263,
+            "name": "logs/error-2019-12-19-10.log",
+            "hash": "3e409976f3a96aef10b7e1bada725444"
+        },
+        {
+            "date": 1576746155908,
+            "name": "logs/error-2019-12-19-11.log",
+            "hash": "04241b46ed61f083cd88b6815b8f7524"
+        },
+        {
+            "date": 1576751643273,
+            "name": "logs/error-2019-12-19-12.log",
+            "hash": "eef611b6a325e52b897b0624ecada190"
+        },
+        {
+            "date": 1576753963758,
+            "name": "logs/error-2019-12-19-13.log",
+            "hash": "6ad2776dcfd1c171b3903e19ae77ff11"
+        },
+        {
+            "date": 1576756865926,
+            "name": "logs/error-2019-12-19-14.log",
+            "hash": "66bb63ee4beaf79fe34d77877a3b8ce3"
+        },
+        {
+            "date": 1576765990900,
+            "name": "logs/error-2019-12-19-16.log",
+            "hash": "0236226374c7a8fffc925168d0f11355"
         }
     ]
 }

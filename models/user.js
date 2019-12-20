@@ -1,4 +1,23 @@
+const cr = require('bcrypt');
 const ROLES = require('../constants/roles');
+
+const hashPasswordHook = (instance, options) => {
+  return new Promise((resolve, reject) => {
+    if (!instance.changed('password')) return resolve(instance, options);
+    cr.genSalt(10, function (err, salt) {
+      if (err) {
+        throw err
+      } else {
+          cr.hash(instance.get('password'), salt, function (err, hash) {
+          if (err) return reject(err);
+          instance.set('password', hash);
+          return resolve(instance, options);
+        });
+      }
+    })
+  })
+};
+
 module.exports = (sequelize, DataTypes) => {
   const user = sequelize.define('site_user', {
     id: {
@@ -37,8 +56,12 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     timestamps: true
   });
-  user.prototype.verifyPassword = function (password) {
-    return password === this.password;
-    }
+  user.prototype.verifyPassword = async function (password) {
+    const result = await cr.compare(password, this.password);
+    const p = await cr.hash(password, 10);
+    return result;
+  }
+  user.beforeCreate(hashPasswordHook);
+  user.beforeUpdate(hashPasswordHook);
   return user;
 };

@@ -2,33 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36beef3a-e529-4829-8bb7-73b0595a66d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/.eslintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/change-password/changePasswordForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/change-password/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/loader/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/loader/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/profile_page/create-profile-wrapper.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/profile_page/edit-profile-wrapper.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/shared-notification-dialog/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/users-container/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/users-container/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/users-container/table-view/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/users-container/table-view/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/reducers/user-list-reduser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_api/DTO/userEntityDTO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_api/middlewares/checkIsCurrentUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_api/modules/user/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/db_api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/actions/login-action.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/actions/login-action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/admin-container/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/admin-container/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/components/admin-container/navigation-menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/admin-container/navigation-menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/login-form/login-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/login-form/login-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/profile_page/edit-profile-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/profile_page/edit-profile-form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/profile_page/profile-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/profile_page/profile-page.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/constants/action_types.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/constants/action_types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/constants/endpoints.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/constants/endpoints.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/helpers/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/helpers/fetch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/reducers/user-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/reducers/user-reduser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/router.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/.984637623d1a1e28373962d342f1aa53b642f477-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/.984637623d1a1e28373962d342f1aa53b642f477-audit.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/.de8814db5d3037581b7b10935ecbdb546d50f113-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/.de8814db5d3037581b7b10935ecbdb546d50f113-audit.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/current.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-03-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-04-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-03-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-04-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-04-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-13.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_api/middlewares/checkIsAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/middlewares/checkIsAdmin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_api/modules/auth/authorisationMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/modules/auth/authorisationMiddleware.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_api/modules/auth/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/modules/auth/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_api/routs/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/routs/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_api/routs/authorisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/routs/authorisation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +189,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/front-end/src/components" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/web_api/modules/hero" />
       <recent name="$PROJECT_DIR$/front-end/src" />
       <recent name="$PROJECT_DIR$/front-end/src/assets" />
@@ -232,7 +253,7 @@
       <workItem from="1576587782784" duration="46000" />
       <workItem from="1576587852180" duration="404000" />
       <workItem from="1576588266780" duration="144000" />
-      <workItem from="1576588428475" duration="26158000" />
+      <workItem from="1576588428475" duration="41073000" />
     </task>
     <task id="LOCAL-00001" summary="authorisation added">
       <created>1568299759703</created>
@@ -388,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576486707267</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Authization almost done">
+      <created>1576683505633</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1576683505633</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +440,8 @@
     <MESSAGE value="added pure css" />
     <MESSAGE value="Authorization works" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="Authization almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authization almost done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-750" y="-873" key="#ESLint" timestamp="1576666689761">
@@ -423,6 +452,10 @@
       <screen x="-1310" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-750" y="-873" key="#Plugins/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1576588409202" />
+    <state x="-779" y="-937" key="CommitChangelistDialog2" timestamp="1576683505331">
+      <screen x="-1310" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-779" y="-937" key="CommitChangelistDialog2/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1576683505331" />
     <state x="-622" y="-769" key="DBNavigator.ResultSetRecordViewerDialog" timestamp="1576683076501">
       <screen x="-1310" y="-1080" width="1920" height="1080" />
     </state>

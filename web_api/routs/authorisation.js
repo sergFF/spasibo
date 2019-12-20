@@ -6,7 +6,7 @@ module.exports = router => {
   router.post('/login', passportHelper.authenticate, (req, res) => {
     return res.status(200).send(omit(req.user, ['password', 'createdAt', 'updatedAt']));
   });
-  router.post('/logout', authenticationMiddleware(), (req, res) => {
+  router.post('/logout', (req, res) => {
     req.logOut();
     res.status(200).send({});
   });
