@@ -1,6 +1,8 @@
 import 'whatwg-fetch';
 // import 'abortcontroller-polyfill/dist/polyfill-patch-fetch';
+import CUSTOM_ERRORS from '../constants/custom_errors'
 import isObject from 'lodash.isobject';
+import { registerError } from '../actions/error-handlig-actions';
 
 /**
  * Fetch API wrapper
@@ -123,24 +125,25 @@ export function fetchApi(url, action, method = 'GET', params, options) {
           return json;
         },
         error => {
-          if (error.status === 401) {
-            // dispatch(SignOut());
-            // dispatch(requireAuthAction());
-          } else if (error.status === 500) {
-            // dispatch(internalServerError('Internal Server Error!'));
-          } else if (error.status === 404) {
-            // dispatch(notFoundError(error.message || 'Not Found Error'));
-          } else if (error.status === 403) {
-            // dispatch(forbiddenError(error.message || 'Forbidden Error'));
-          } else if (error.status === 505) {
-            // dispatch(ODAError(error.message || 'ODA API Server Error'));
-            console.log(error);
-          } else if (error.status === 302) {
-            // dispatch(sessionExpired());
-          } else if (error.status === 400) {
-            // dispatch(badRequestError(error.message || 'Request error'));
-          }
-
+          const customError = CUSTOM_ERRORS[error.status];
+          // if (error.status === 401) {
+          //   // dispatch(SignOut());
+          //   // dispatch(requireAuthAction());
+          // } else if (error.status === 500) {
+          //   // dispatch(internalServerError('Internal Server Error!'));
+          // } else if (error.status === 401) {
+          //   // dispatch(notFoundError(error.message || 'Not Found Error'));
+          // } else if (error.status === 403) {
+          //   // dispatch(forbiddenError(error.message || 'Forbidden Error'));
+          // } else if (error.status === 505) {
+          //   // dispatch(ODAError(error.message || 'ODA API Server Error'));
+          //   console.log(error);
+          // } else if (error.status === 302) {
+          //   // dispatch(sessionExpired());
+          // } else if (error.status === 400) {
+          //   // dispatch(badRequestError(error.message || 'Request error'));
+          // }
+          dispatch(registerError(customError || error));
           dispatch({ ...reactAction, type: `ERROR_${reactAction.type}`, payload: error });
           return Promise.reject(error);
         }

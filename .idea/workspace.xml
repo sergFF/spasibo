@@ -2,54 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36beef3a-e529-4829-8bb7-73b0595a66d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/change-password/changePasswordForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/change-password/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/loader/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/loader/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/profile_page/create-profile-wrapper.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/profile_page/edit-profile-wrapper.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/shared-notification-dialog/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/users-container/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/users-container/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/users-container/table-view/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/users-container/table-view/selectors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/reducers/user-list-reduser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_api/DTO/userEntityDTO.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_api/middlewares/checkIsCurrentUser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_api/modules/user/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/MuiStyles/colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/actions/error-handlig-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/actions/users-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/error-dialog/dialog.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/error-dialog/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/error-dialog/selectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/constants/custom_errors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/reducers/errors-reduser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/actions/login-action.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/actions/login-action.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/admin-container/navigation-menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/admin-container/navigation-menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/components/login-form/login-form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/login-form/login-form.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/constants/action_types.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/constants/action_types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/constants/endpoints.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/constants/endpoints.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/helpers/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/helpers/fetch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/reducers/user-reduser.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/reducers/user-reduser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/router.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/.984637623d1a1e28373962d342f1aa53b642f477-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/.984637623d1a1e28373962d342f1aa53b642f477-audit.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/.de8814db5d3037581b7b10935ecbdb546d50f113-audit.json" beforeDir="false" afterPath="$PROJECT_DIR$/logs/.de8814db5d3037581b7b10935ecbdb546d50f113-audit.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/current.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/current.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-05-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-04-17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_api/middlewares/checkIsAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/middlewares/checkIsAdmin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_api/modules/auth/authorisationMiddleware.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/modules/auth/authorisationMiddleware.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_api/modules/auth/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/modules/auth/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_api/routs/authorisation.js" beforeDir="false" afterPath="$PROJECT_DIR$/web_api/routs/authorisation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error-2019-12-06-15.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-05-17.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/full-2019-12-06-15.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +36,6 @@
       </map>
     </option>
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1310" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
   </component>
   <component name="ProjectId" id="1V6SOAj4yxOK73IVyOXBc0tybMw" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -171,7 +137,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js.eslint.nodeInterpreter" value="project" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web_api/middlewares" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front-end/src/components/error-dialog" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -196,11 +162,11 @@
       <recent name="$PROJECT_DIR$/front-end/src/assets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-end/src/components/error-dialog" />
       <recent name="$PROJECT_DIR$/web_api/middlewares" />
       <recent name="$PROJECT_DIR$/front-end/src/components/profile_page" />
       <recent name="$PROJECT_DIR$/front-end/src/reducers" />
       <recent name="$PROJECT_DIR$/front-end" />
-      <recent name="$PROJECT_DIR$/front-end/src" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -253,7 +219,7 @@
       <workItem from="1576587782784" duration="46000" />
       <workItem from="1576587852180" duration="404000" />
       <workItem from="1576588266780" duration="144000" />
-      <workItem from="1576588428475" duration="41073000" />
+      <workItem from="1576588428475" duration="50951000" />
     </task>
     <task id="LOCAL-00001" summary="authorisation added">
       <created>1568299759703</created>
@@ -416,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576683505633</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added lost files">
+      <created>1576831072461</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1576831072461</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +414,8 @@
     <MESSAGE value="Authorization works" />
     <MESSAGE value="update" />
     <MESSAGE value="Authization almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authization almost done" />
+    <MESSAGE value="added lost files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lost files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-750" y="-873" key="#ESLint" timestamp="1576666689761">
@@ -452,10 +426,10 @@
       <screen x="-1310" y="-1080" width="1920" height="1080" />
     </state>
     <state x="-750" y="-873" key="#Plugins/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1576588409202" />
-    <state x="-779" y="-937" key="CommitChangelistDialog2" timestamp="1576683505331">
+    <state x="-779" y="-937" key="CommitChangelistDialog2" timestamp="1576831072068">
       <screen x="-1310" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-779" y="-937" key="CommitChangelistDialog2/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1576683505331" />
+    <state x="-779" y="-937" key="CommitChangelistDialog2/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1576831072068" />
     <state x="-622" y="-769" key="DBNavigator.ResultSetRecordViewerDialog" timestamp="1576683076501">
       <screen x="-1310" y="-1080" width="1920" height="1080" />
     </state>
@@ -468,10 +442,14 @@
       <screen x="-1310" y="-1080" width="1920" height="1080" />
     </state>
     <state width="200" height="160" key="TextEditor.fullName/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1576588073338" />
-    <state x="-687" y="-771" width="673" height="462" key="find.popup" timestamp="1576676343331">
+    <state x="-561" y="-616" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576831142329">
       <screen x="-1310" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-687" y="-771" width="673" height="462" key="find.popup/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1576676343331" />
+    <state x="-561" y="-616" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1576831142329" />
+    <state x="-687" y="-771" width="673" height="462" key="find.popup" timestamp="1577108377438">
+      <screen x="-1310" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-687" y="-771" width="673" height="462" key="find.popup/610.-1080.1920.1080/0.0.1440.900/-1310.-1080.1920.1080@-1310.-1080.1920.1080" timestamp="1577108377438" />
     <state x="-685" y="-839" width="670" height="676" key="search.everywhere.popup" timestamp="1576588404486">
       <screen x="-1310" y="-1080" width="1920" height="1080" />
     </state>

@@ -6,6 +6,7 @@ import App from './App.jsx';
 import ClientSide from './components/client-container/';
 import AdminSide from './components/admin-container/';
 import ChangePassword from "./components/change-password";
+import ErrorDialog from "./components/error-dialog";
 
 
 const Root = ({ store }) => (
@@ -20,6 +21,7 @@ const Root = ({ store }) => (
       </Switch>
       </App>
     </Router>
+    <ErrorDialog />
   </Provider>
 )
 

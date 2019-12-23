@@ -1,8 +1,0 @@
-2019-12-05T15:20:13.980Z  info: GET /api/login?req_timestamp=1575559213757 200 1.126 ms - 166
-
-2019-12-05T15:21:17.927Z  info: POST /api/login 200 82.862 ms - 109
-
-2019-12-05T15:30:45.768Z  info: GET /api/login?req_timestamp=1575559845542 200 1.025 ms - 166
-
-2019-12-05T15:30:50.379Z  info: GET /api/login?req_timestamp=1575559850256 200 0.360 ms - 166
-

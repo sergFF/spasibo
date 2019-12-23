@@ -14,12 +14,7 @@ function LoginForm({ history }) {
   const [password, setPassword] = useState({ password: null });
   const handleSendRequest = (e) => {
     e.preventDefault();
-    dispatch(getUser(login, password)).then(user => {
-      if (user.status) {
-        alert("Authorization error");
-        return;
-      }
-    });
+    dispatch(getUser(login, password));
   }
   if (userData && status === 'DONE' ) {
      return (<Redirect to='/admin' />)
